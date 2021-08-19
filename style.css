@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .night {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(32, 30, 30);
+} */
+.siren-field {
+  text-align: center;
+}
+.siren-field.active {
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+.siren {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 30px;
+}
+.left, .right {
+  background-color: #ccc;
+  width: 100px;
+  height: 150px;
+}
+.left {
+  border-top-left-radius: 50%;
+}
+.right {
+  border-top-right-radius: 50%;
+}
+.left.active {
+  background-image: radial-gradient( #fff , #7169e2 , #13356d, #13356d );
+  box-shadow: 0 0 2px 5px #0c0a86, 0 0 10px 10px #8b88af;
+}
+.right.active {
+  background-image: radial-gradient( #fff , #e6d224 , #e24c1e, #d31111 );
+  box-shadow: 0 0 2px 5px #d31111,0 0 10px 10px #b96d6d;
+}
+.button.active>svg path:nth-child(1){
+  cursor: pointer;
+  fill: green
+}
+.button.active>svg path:nth-child(2){
+  cursor: pointer;
+  fill: rgb(29, 151, 29)
+}
+.button.active>svg path:nth-child(3){
+  cursor: pointer;
+  fill: rgb(71, 156, 71)
+}
+.button.active>svg path:nth-child(4){
+  cursor: pointer;
+  fill: rgb(76, 245, 76)
+}
